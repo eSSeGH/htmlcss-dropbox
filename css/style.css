@@ -168,11 +168,11 @@ BUSINESS PLAN SECTION
     height: 100%;
 }
 
-.row-business-plan :nth-child(2) {
+.row-business-plan col4:nth-child(2) {
     padding-left: 0;
 }
 
-.row-business-plan :nth-child(4) {
+.row-business-plan col4:nth-child(4) {
     padding-right: 0;
 }
 
@@ -200,4 +200,32 @@ BUSINESS PLAN VERTICAL CARDS
     height: 42px;
     line-height: 42px;
     text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.card-desc,
+.card-feature {
+  padding: 33px;
+}
+
+.card-desc>*,
+.card-feature>* {
+  line-height: 30px;
+}
+
+.business-plan [class*="info"] {
+    padding: 35px 0;
+}
+
+[class*="info"]> li {
+    padding: 14px 0;
+}
+
+.business-plan-link {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.card-feature-info>li {
+    list-style-type: "\f00c";
 }
