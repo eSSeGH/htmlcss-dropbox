@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*********** 
+UTILITY CLASS
+************/
+
+.flex {
+    display: flex;
+}
+
+.p-rel {
+    position: relative;
+}
+
+.no-dec {
+    list-style-type: none;
+}
+
+/*********** 
+TITLES
+************/
+
+.title3 {
+
+}
+
+/*********** 
+LOGOS & ICONS
+************/
+
+.logo-small {
+    height: 32px;
+}
+
+/*********** 
+HEADER
+************/
+
+header {
+    height: 84px;
+    justify-content: space-between;
+}
+
+header .col {
+    align-items: center;
+}
+
+.header-l-nav,
+.header-r-nav {
+    border: 1px solid black;
+
+}
+
+.header-l-nav ul{
+
+}
+
+.header-r-nav ul {
+
+}
+
+header li {
+    display: inline-block;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.header-link {
+
+}
+
+.header-link.blue {
+    
+}
+
