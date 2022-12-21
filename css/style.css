@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 
 /*********** 
@@ -33,7 +35,9 @@ LOGOS & ICONS
 ************/
 
 .logo-small {
-    height: 32px;
+    height: 100%;
+    position: relative;
+    top: 7px;
 }
 
 /*********** 
@@ -51,8 +55,7 @@ header .col {
 
 .header-l-nav,
 .header-r-nav {
-    border: 1px solid black;
-
+    height: 32px;
 }
 
 .header-l-nav ul{
@@ -65,15 +68,17 @@ header .col {
 
 header li {
     display: inline-block;
+    height: 100%;
     line-height: 32px;
-    font-size: 18px;
+    padding: 0 14px;
 }
 
 .header-link {
-
+    text-decoration: none;
 }
 
 .header-link.blue {
-    
+    background-color: cornflowerblue;
+    border: 2px solid rgb(164, 196, 255);
 }
 
