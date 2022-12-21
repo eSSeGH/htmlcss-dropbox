@@ -209,7 +209,9 @@ BUSINESS PLAN VERTICAL CARDS
 }
 
 .card-desc>*,
-.card-feature>* {
+.card-feature>*,
+.card-header>*,
+.card-main {
   line-height: 30px;
 }
 
@@ -229,3 +231,24 @@ BUSINESS PLAN VERTICAL CARDS
 .card-feature-info>li {
     list-style-type: "\f00c";
 }
+
+.buy-now-link.underline {
+    color: blue;
+}
+
+/*********** 
+BUSINESS PLAN HORIZONTAL CARD
+************/
+
+.card-main {
+    flex-wrap: wrap;
+}
+
+.card-main>.col12 {
+    justify-content: space-between;
+}
+
+.card-main [class^="enterprise"] {
+    padding: 33px;
+}
+
