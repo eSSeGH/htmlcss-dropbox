@@ -7,11 +7,13 @@
 }
 
 img {
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 figure {
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 p {
@@ -121,6 +123,10 @@ COLUMNS
 
 .col5 {
     flex-basis: calc(100%*5/12)
+}
+
+.col5 {
+    flex-basis: calc(100%*2/12)
 }
 
 /*********** 
@@ -333,7 +339,7 @@ FEATURE
 }
 
 /*********** 
-USERS
+USERS SECTION
 ************/
 
 .link-normal {
@@ -344,3 +350,32 @@ USERS
     padding-top: 220px;
     padding-bottom: 155px;
 }
+
+/*********** 
+DESIGNIT SECTION
+************/
+
+.row-design-it {
+    flex-wrap: wrap;
+}
+
+.row-design-it [class^="col"] {
+    border: 1px solid black;
+}
+
+.row-design-it :not(2-rows) {
+    align-content: flex-start;
+}
+
+.designit img {
+    transform: scale(0.1);
+}
+
+.sponsor {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
