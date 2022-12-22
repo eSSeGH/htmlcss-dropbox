@@ -22,6 +22,10 @@ UTILITY CLASS
     list-style-type: none;
 }
 
+.no-line-height {
+ line-height: unset;
+}
+
 /*********** 
 TITLES
 ************/
@@ -42,7 +46,7 @@ LOGOS & ICONS
 .logo-small {
     height: 100%;
     position: relative;
-    top: 7px;
+    top: 5px;
 }
 
 /*********** 
@@ -75,8 +79,6 @@ COLUMNS
     flex-basis: calc(100%*2/3)
 }
 
-
-
 /*********** 
 HEADER
 ************/
@@ -98,8 +100,13 @@ header .col {
 header li {
     display: inline-block;
     height: 100%;
+}
+
+header a {
+    width: 100%;
+    display: block;
     line-height: 32px;
-    padding: 0 14px;
+    margin: 0 14px;
 }
 
 .header-link {
@@ -123,34 +130,28 @@ HERO
 .hero {
     background-color: rgb(165, 213, 255);
     padding-top: 104px;
-    height: 660px;
 }
 
 .row-hero {
     flex-wrap: wrap;
     gap: 60px 0;
-    align-items: flex-start;
 }
 
-.col4>* {
-    display: inline-block;
-    margin-bottom: 35px;
+.row-hero>.col4 {
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .fig-jumbo {
-    height: 110%;
+   margin-bottom: -75px;
 }
 
 .jumbo {
     width: 100%;
-    height: 100%;
-    overflow: visible;
 }
 
 .hero-arrow {
-    display: block;
     font-size: 45px;
-    padding-top: 25px;
 }
 
 /*********** 
@@ -220,6 +221,9 @@ BUSINESS PLAN VERTICAL CARDS
 .card-main {
   line-height: 30px;
 }
+
+/* SE DAI I NOMI LEGANDO SOLO PADRE E FIGLIO DI VOLTA IN VOLTA NON TI CAPITA
+DI DOVER AVERE DEI SELETTORI COSì INCASINATI  */
 
 .business-plan [class*="info"] {
     padding: 35px 0;
