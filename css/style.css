@@ -6,6 +6,18 @@
     font-family: sans-serif;
 }
 
+img {
+    width: 100%
+}
+
+figure {
+    width: 100%
+}
+
+p {
+    margin-bottom: 20px;
+}
+
 /*********** 
 UTILITY CLASS
 ************/
@@ -39,14 +51,38 @@ TITLES
     margin-bottom: 55px;
 }
 
+.title3 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
 /*********** 
-LOGOS & ICONS
+LOGOS ICONS BUTTONS
 ************/
 
 .logo-small {
     height: 100%;
     position: relative;
     top: 5px;
+}
+
+.white-button {
+    display: inline-block;
+    border: 1px solid black;
+    height: 32px;
+    padding: 0 14px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.blue {
+    background-color: cornflowerblue;
+    border: 2px solid rgb(164, 196, 255);
+    height: 32px;
+    padding: 0 14px;
+    line-height: 32px;
+    text-decoration: none;
+    color: white;
 }
 
 /*********** 
@@ -79,6 +115,14 @@ COLUMNS
     flex-basis: calc(100%*2/3)
 }
 
+.col7 {
+    flex-basis: calc(100%*7/12)
+}
+
+.col5 {
+    flex-basis: calc(100%*5/12)
+}
+
 /*********** 
 HEADER
 ************/
@@ -109,18 +153,8 @@ header a {
     margin: 0 14px;
 }
 
-.header-link {
+[class$="link"] {
     text-decoration: none;
-}
-
-.blue {
-    background-color: cornflowerblue;
-    border: 2px solid rgb(164, 196, 255);
-    height: 32px;
-    padding: 0 14px;
-    line-height: 32px;
-    text-decoration: none;
-    color: white;
 }
 
 /*********** 
@@ -261,4 +295,17 @@ BUSINESS PLAN HORIZONTAL CARD
 .card-main [class^="enterprise"] {
     padding: 33px;
 }
+
+/*********** 
+PARTNER
+************/
+
+.partner {
+    margin-top: 155px;
+}
+
+.row-partner>.col5  {
+    padding: 60px 50px;
+}
+
 
