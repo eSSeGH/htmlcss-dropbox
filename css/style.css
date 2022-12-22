@@ -331,3 +331,16 @@ FEATURE
 .row-feature [class="col4"]:nth-of-type(4n+3) {
     padding-right: 0;
 }
+
+/*********** 
+USERS
+************/
+
+.link-normal {
+    color: blue;
+}
+
+.users {
+    padding-top: 220px;
+    padding-bottom: 155px;
+}
