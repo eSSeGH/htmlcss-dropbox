@@ -152,8 +152,8 @@ COLUMNS
     flex-basis: calc(100%*5/12)
 }
 
-.col5 {
-    flex-basis: calc(100%*2/12)
+.col6 {
+    flex-basis: calc(100%*6/12)
 }
 
 .col1-5 {
@@ -378,13 +378,11 @@ DESIGNIT SECTION
     border: 1px solid black;
 }
 
-.row-design-it :not(2-rows) {
-    align-content: flex-start;
+.row-design-it>.col4 {
+    flex-wrap: wrap;
+    aspect-ratio: 1;
 }
 
-.designit img {
-    transform: scale(0.1);
-}
 
 .sponsor {
     width: 100%;
