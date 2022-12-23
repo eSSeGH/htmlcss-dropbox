@@ -171,6 +171,7 @@ header {
 
 header .col {
     align-items: center;
+    padding: 0 30px;
 }
 
 .header-l-nav,
@@ -381,6 +382,14 @@ DESIGNIT SECTION
 .row-design-it .col6 {
     align-items: center;
     aspect-ratio: 1/1;
+}
+
+.row-design-it .col6:hover {
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.row-design-it .col6.border {
+    border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
 .sponsor:not(.double) {
