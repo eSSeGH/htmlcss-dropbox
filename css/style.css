@@ -8,12 +8,10 @@
 
 img {
     width: 100%;
-    height: 100%
 }
 
 figure {
     width: 100%;
-    height: 100%
 }
 
 p {
@@ -59,8 +57,11 @@ TITLES
 }
 
 /*********** 
-LOGOS ICONS BUTTONS
+LOGOS ICONS BUTTONS LINKS
 ************/
+i {
+    padding: 0 5px;
+}
 
 .logo-small {
     height: 100%;
@@ -87,8 +88,28 @@ LOGOS ICONS BUTTONS
     color: white;
 }
 
+[class$="link"] {
+    text-decoration: none;
+}
+
+header li,
+footer li {
+    display: inline-block;
+    height: 100%;
+}
+
+header a,
+footer a {
+    width: 100%;
+    display: block;
+    line-height: 32px;
+    margin: 0 14px;
+}
+
+
+
 /*********** 
-CONTAINERS
+CONTAINERS + LITTLE BORDERS
 ************/
 
 .container1 {
@@ -99,6 +120,12 @@ CONTAINERS
 .container2 {
     max-width: 1040px;
     margin: 0 auto;
+}
+
+.card-desc,
+.row-footer {
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
 }
 
 /*********** 
@@ -129,6 +156,10 @@ COLUMNS
     flex-basis: calc(100%*2/12)
 }
 
+.col1-5 {
+    flex-basis: calc(100%*1/5)
+}
+
 /*********** 
 HEADER
 ************/
@@ -145,22 +176,6 @@ header .col {
 .header-l-nav,
 .header-r-nav {
     height: 32px;
-}
-
-header li {
-    display: inline-block;
-    height: 100%;
-}
-
-header a {
-    width: 100%;
-    display: block;
-    line-height: 32px;
-    margin: 0 14px;
-}
-
-[class$="link"] {
-    text-decoration: none;
 }
 
 /*********** 
@@ -399,8 +414,40 @@ DOMANDE SECTION
     padding: 45px;
 }
 
+/*********** 
+FOOTER
+************/
 
+footer {
+    background-color: black;
+    color: white;
+}
 
+.row-footer {
+    padding: 110px 0;
+}
 
+footer li {
+    display: block;
+}
 
+.footer-link {
+    color: white;
+    font-size: 11px;
+}
 
+.col1-5 .no-dec {
+    margin-left: -13px;
+}
+
+.col1-5 strong {
+    line-height: 70px;
+}
+
+.language {
+    line-height: 70px;
+}
+
+.row-footer {
+
+}
