@@ -374,20 +374,112 @@ DESIGNIT SECTION
     flex-wrap: wrap;
 }
 
-.row-design-it [class^="col"] {
-    border: 1px solid black;
-}
-
-.row-design-it>.col4 {
+.row-design-it .col4 {
     flex-wrap: wrap;
-    aspect-ratio: 1;
 }
 
+.row-design-it .col6 {
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+.sponsor:not(.double) {
+    margin: 0 auto;
+}
+
+.sponsor.height10 {
+    max-width: 
+}
+
+.sponsor.double {
+    margin-bottom: 100px;
+}
 
 .sponsor {
-    width: 100%;
-    height: 100%;
+    filter: invert(100%) sepia(61%) saturate(47%) hue-rotate(39deg) brightness(116%) contrast(100%)
 }
+
+.row-design-it>.col12 {
+    padding: 100px;
+}
+
+.row-design-it>.col4.double{
+ padding: 50px;
+}
+
+/*********** 
+SPONSOR DIMENSION
+************/
+
+.sponsor.designit {
+  height: 20%;
+}
+
+.sponsor.arizona {
+    height: 40%;
+}
+
+.sponsor.world-bicycle {
+    height: 23%;
+}
+
+.sponsor.florida {
+    height: 16%;
+    width: 68%;
+}
+
+.sponsor.topps {
+    height: 28%;
+}
+
+.sponsor.hearst {
+    width: 70%;
+}
+
+.sponsor.lonely-planet {
+    height: 30%;
+}
+
+.sponsor.clear-channel {
+    height: 40%;
+}
+
+/*********** 
+DESIGN-IT COLORS
+************/
+.bordeaux {
+    color: darkred;
+    margin: 0;
+}
+
+.sponsor {
+    filter: invert(100%) sepia(61%) saturate(47%) hue-rotate(39deg) brightness(116%) contrast(100%)
+}
+
+.red {
+    background-color: #D5001F;
+}
+
+.light-blue {
+    background-color: #B4D0E7;
+}
+
+.dark-blue {
+    background-color: #4F5FA3;
+}
+
+.yellow {
+    background-color: #FFD830;
+}
+
+.col4.double {
+    background-color: lightgray;
+}
+
+.row-design-it .col12 {
+    background-color: #B4D0E7;
+}
+
 
 /*********** 
 DOMANDE SECTION
@@ -444,8 +536,4 @@ footer li {
 
 .language {
     line-height: 70px;
-}
-
-.row-footer {
-
 }
