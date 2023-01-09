@@ -70,6 +70,7 @@ i {
 }
 
 .white-button {
+    background-color: white;
     display: inline-block;
     border: 1px solid black;
     height: 32px;
