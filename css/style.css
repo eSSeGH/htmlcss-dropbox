@@ -123,11 +123,23 @@ CONTAINERS + LITTLE BORDERS
     margin: 0 auto;
 }
 
-.card-desc,
-.row-footer {
-    border-bottom: 1px solid grey;
-    padding-bottom: 30px;
+.card-desc::after,
+.language::before,
+.sponsor-title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 150px;
+    background-color: #a2a2a2;
+    margin-top: 36px;
 }
+
+/* se volessi che uesto after venisse visto come figlio diretto 
+del container flex per potergli per esempio dare un gap in colonna anche
+alla piccola "hr": DISPLAY: CONTENTS ; al tag padre di after.
+ se poi vai sull'inspector il padre scompare solo 
+a livello grafico e i suoi figli diventano figli diretti del container con flex. */
+
 
 /*********** 
 COLUMNS
@@ -401,8 +413,8 @@ DESIGNIT SECTION
     max-width: 
 }
 
-.sponsor.double {
-    margin-bottom: 100px;
+.col4.double p {
+ margin-top: 36px;
 }
 
 .sponsor {
@@ -457,6 +469,7 @@ SPONSOR DIMENSION
 /*********** 
 DESIGN-IT COLORS
 ************/
+
 .bordeaux {
     color: darkred;
     margin: 0;
@@ -547,3 +560,4 @@ footer li {
 .language {
     line-height: 70px;
 }
+
